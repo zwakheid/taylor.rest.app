@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Taylor Swift REST API, written in Deno." />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+  <script defer src="app.js"></script>
+  <title>Taylor Swift Quotes</title>
+</head>
+
+<body>
+  <div class="app">
+    <div class="header">
+      <h1>taylor.rest</h1>
+      <p> A Taylor Swift inspired API. Use it yourself at <a rel="noopener noreferrer" target="_blank" href="https://api.taylor.rest">api.taylor.rest</a> </p><button id="switcher" class="small" onclick="switchView()"> To images! </button>
+    </div>
+    <p id="quote" class="quote">“No matter what happens in life, be good to people. Being good to people is a wonderful legacy to leave behind.”</p><img id="image" class="image" alt="Taylor Swift" />
+    <p id="error" class="error">Something went wrong!</p>
+    <div class="footer">
+      <a rel="noopener noreferrer" id="twitter" class="twitter" target="_blank" href="https://twitter.com/intent/tweet?text=No matter what happens in life, be good to people. Being good to people is a wonderful legacy to leave behind.">
+        <img alt="Twitter icon" class="icon" src="./assets/twitter.svg" />Tweet this! </a>
+      <a rel="noopener noreferrer" class="github" target="_blank" href="https://github.com/GillesWHC/taylor.rest">
+        <img alt="Github icon" class="icon" src="./assets/github.svg" />
+      </a>
+      <button id="refresher" onclick="refresh()"> Refresh </button>
+    </div>
+  </div>
+</body>
+
+</html>
