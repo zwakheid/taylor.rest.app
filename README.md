@@ -1,6 +1,7 @@
 ### taylor.rest.app
 
-The frontend for the taylor.rest API.
+The frontend for the taylor.rest API, build using basic HTML, CSS and JS. 
+Developed using Snowpack!
 
 `npm start`
 
