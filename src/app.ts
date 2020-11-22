@@ -28,6 +28,7 @@ const refresh = () => isQuote ? fetchQuote() : fetchImage();
 const fetchQuote = async () => {
   try {
     setLoading(true);
+
     quote.style.opacity = '0';
 
     const response = await fetch('https://api.taylor.rest');
@@ -39,6 +40,7 @@ const fetchQuote = async () => {
     twitter.href = `https://twitter.com/intent/tweet?text=${data.quote}`;
 
     setLoading(false);
+
     quote.style.opacity = '1';
   } catch (error) {
     console.error(error);
@@ -58,6 +60,7 @@ const fetchImage = async () => {
 
     image.src = data.url;
     twitter.href = `https://twitter.com/intent/tweet?text=${data.url}`;
+
     setLoading(false);
   } catch (error) {
     console.error(error);
