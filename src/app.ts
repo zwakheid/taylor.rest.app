@@ -1,24 +1,24 @@
-let quote;
-let image;
-let error;
-let twitter;
-let switcher;
-let refresher;
+let quote: HTMLParagraphElement;
+let image: HTMLImageElement;
+let error: HTMLDivElement;
+let twitter: HTMLLinkElement;
+let switcher: HTMLButtonElement;
+let refresher: HTMLButtonElement;
 let isQuote = true;
 
 document.addEventListener('DOMContentLoaded', () => {
-  quote = document.getElementById('quote');
-  image = document.getElementById('image');
-  error = document.getElementById('error');
-  twitter = document.getElementById('twitter');
-  switcher = document.getElementById('switcher');
-  refresher = document.getElementById('refresher');
+  quote = <HTMLParagraphElement>document.getElementById('quote');
+  image = <HTMLImageElement>document.getElementById('image');
+  error = <HTMLDivElement>document.getElementById('error');
+  twitter = <HTMLLinkElement>document.getElementById('twitter');
+  switcher = <HTMLButtonElement>document.getElementById('switcher');
+  refresher = <HTMLButtonElement>document.getElementById('refresher');
 
   quote.style.opacity = '1';
   image.onload = () => image.style.opacity = '1';
 }, false);
 
-const setLoading = (loading) => {
+const setLoading = (loading: boolean) => {
   switcher.disabled = loading;
   refresher.disabled = loading;
 }
