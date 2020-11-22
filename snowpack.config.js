@@ -4,7 +4,7 @@ module.exports = {
     src: '/'
   },
   plugins: [
-    /* ... */
+    ['@snowpack/plugin-optimize']
   ],
   install: [
     /* ... */
