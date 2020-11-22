@@ -68,16 +68,20 @@ body {
   margin: 0.3rem 0.3rem 0 0;
 }
 .footer .twitter {
-  width: 7rem;
+  width: 6rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
-  color: #55acee;
+  border-radius: 1rem;
+  padding: 0.3rem 1rem;
+  transition: 0.2s all;
+  background-color: #55acee;
 }
-.footer .twitter .icon {
-  height: 0.9rem;
-}
+
 .footer button {
-  width: 7rem;
+  width: 8rem;
 }
 .footer .github .icon {
   height: 1.4rem;
@@ -86,21 +90,17 @@ body {
 .quote {
   opacity: 0;
   flex-grow: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: -3rem 2rem 0;
+  display: block;
+  margin: 3rem 2rem 0;
   font-weight: 700;
   font-style: italic;
   font-size: 2rem;
-  line-height: 2.4rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   background-clip: text;
   background: linear-gradient(30deg, var(--pink), var(--blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
   transition: 0.1s opacity;
 }
 

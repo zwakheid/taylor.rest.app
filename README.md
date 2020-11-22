@@ -1,7 +1,7 @@
 ### taylor.rest.app
 
-The frontend for the taylor.rest API, build using basic HTML, CSS and JS. 
-Developed using Snowpack!
+The frontend for the [taylor.rest](https://taylor.rest/) API, build using basic HTML, CSS and JS. 
+Developed using [Snowpack](https://snowpack.dev/)!
 
 `npm start`
 
@@ -15,3 +15,7 @@ You will also see any lint errors in the console.
 
 Builds a static copy of your site to the `build/` folder.
 Your app is ready to be deployed!
+
+`surge ./build taylor.rest`
+
+Deploys the site to the [taylor.rest](https://taylor.rest/) domain.
